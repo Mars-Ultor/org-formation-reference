@@ -70,12 +70,12 @@ You will use AWS SSO to obtain access to the AWS Accounts after we are done with
 
 | Parameter | Description | Example
 | ----- | ----------- | ---
-| SSO start URL | Go to AWS SSO -> Settings -> User Portal -> User Portal URL | https://dgega332fa.awsapps.com/start
-| {{sso-instance-arn}} | Go to AWS SSO -> Settings -> ARN | arn:aws:sso:::instance/ssoins-6987b39db64e1ecd
-| {{sso-admin-group-id}} | Go to AWS SSO -> Groups -> Administrator -> Details -> Group ID | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
-| {{sso-auditor-group-id}} | Go to AWS SSO -> Groups -> Auditor -> Details -> Group ID | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
-| {{sso-developer-group-id}} | Go to AWS SSO -> Groups -> Developer -> Details -> Group ID | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
-| {{sso-supporter-group-id}} | Go to AWS SSO -> Groups -> Supporter -> Details -> Group ID | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
+| SSO start URL | Go to AWS SSO -> Settings -> User Portal -> User Portal URL | (https://d-90679cd310.awsapps.com/start)
+| {{sso-instance-arn}} | Go to AWS SSO -> Settings -> ARN | arn:aws:sso:::instance/ssoins-7223266a30cc40f7
+| {{sso-admin-group-id}} | Go to AWS SSO -> Groups -> Administrator -> Details -> Group ID | 04b85448-40b1-7005-d443-4dde5ca81f47
+| {{sso-auditor-group-id}} | Go to AWS SSO -> Groups -> Auditor -> Details -> Group ID | 94e8b428-c081-7084-6b3f-e73ea66b783c
+| {{sso-developer-group-id}} | Go to AWS SSO -> Groups -> Developer -> Details -> Group ID | 74e8b488-0021-7013-51d0-574352d8231a
+| {{sso-supporter-group-id}} | Go to AWS SSO -> Groups -> Supporter -> Details -> Group ID | 44982438-9091-706b-09d1-8e77a28a3615
 
 Configuring AWS SSO manually using AWS SSO itself as an identity provider is the quickest and easiest way to get started (and is batteries included). At the time of writing AWS SSO does not support automating this via an API, as soon as it does, this guide will be updated accordingly. If you want to configure an external Identity Provider, then start [here](https://docs.aws.amazon.com/singlesignon/latest/userguide/supported-idps.html).
 ## 4. Clone and modify this repository
