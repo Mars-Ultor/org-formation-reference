@@ -84,18 +84,18 @@ Configuring AWS SSO manually using AWS SSO itself as an identity provider is the
 
 | Parameter | Description | Source | Example
 | --- | --- | --- | ---
-| {{management-account-id}} | 12 digit identifier of the management account | [Create the AWS Management Account](#1-create-the-aws-management-account) | 341696816352
-| {{state-bucket-name}} | S3 bucket where the IaC state will be stored | choose | organization-formation-state-341696816352-prd
-| {{organization-name}} | Alias of the management account | choose | bee-awesome
+| {{management-account-id}} | 12 digit identifier of the management account | [Create the AWS Management Account](#1-create-the-aws-management-account) | 847408437196
+| {{state-bucket-name}} | S3 bucket where the IaC state will be stored | choose | organization-formation-0291-prd
+| {{organization-name}} | Alias of the management account | choose | Bowo
 | {{primary-aws-region}} | The primary AWS region to deploy to | choose | us-east-1
-| {{management-root-email-address}} | Email address used to register the management account | [Create the AWS Management Account](#1-create-the-aws-management-account) | platform.team@bee.awesome
-| {{compliance-root-email-address}} | Email address for the compliance account | [Prerequisites](#prerequisites) | platform.team+compliance@bee.awesome
-| {{orgbuild-root-email-address}} | Email address for the org build account | [Prerequisites](#prerequisites) | platform.team+org-build@bee.awesome
-| {{sso-instance-arn}} | AWS SSO instance ARN | [Configure AWS SSO](#3-configure-aws-sso) | arn:aws:sso:::instance/ssoins-6987b39db64e1ecd
-| {{sso-admin-group-id}} | Principal ID from Identity Provider's group used by administrators | [Configure AWS SSO](#3-configure-aws-sso) |99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
-| {{sso-auditor-group-id}} | Principal ID from Identity Provider's group used by auditors | [Configure AWS SSO](#3-configure-aws-sso) | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
-| {{sso-developer-group-id}} | Principal ID from Identity Provider's group used by auditors | [Configure AWS SSO](#3-configure-aws-sso) | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
-| {{sso-supporter-group-id}} | Principal ID from Identity Provider's group used by supporters | [Configure AWS SSO](#3-configure-aws-sso) | 99672ac0cf-8495fd69-c57e-4214-88a4-b9f41eed0d32
+| {{management-root-email-address}} | Email address used to register the management account | [Create the AWS Management Account](#1-create-the-aws-management-account) | ayodejisadiku@gmail.com
+| {{compliance-root-email-address}} | Email address for the compliance account | [Prerequisites](#prerequisites) | ayodejisadiku+compliance@gmail.com
+| {{orgbuild-root-email-address}} | Email address for the org build account | [Prerequisites](#prerequisites) | ayodejisadiku+org-build@gmail.com
+| {{sso-instance-arn}} | AWS SSO instance ARN | [Configure AWS SSO](#3-configure-aws-sso) | arn:aws:sso:::instance/ssoins-7223266a30cc40f7
+| {{sso-admin-group-id}} | Principal ID from Identity Provider's group used by administrators | [Configure AWS SSO](#3-configure-aws-sso) |04b85448-40b1-7005-d443-4dde5ca81f47
+| {{sso-auditor-group-id}} | Principal ID from Identity Provider's group used by auditors | [Configure AWS SSO](#3-configure-aws-sso) | 94e8b428-c081-7084-6b3f-e73ea66b783c
+| {{sso-developer-group-id}} | Principal ID from Identity Provider's group used by auditors | [Configure AWS SSO](#3-configure-aws-sso) | 74e8b488-0021-7013-51d0-574352d8231a
+| {{sso-supporter-group-id}} | Principal ID from Identity Provider's group used by supporters | [Configure AWS SSO](#3-configure-aws-sso) | 44982438-9091-706b-09d1-8e77a28a3615
 
 ## 5. Initialize `org-formation`
 
