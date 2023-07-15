@@ -7,13 +7,13 @@ Organization:
   ManagementAccount:
     Type: OC::ORG::MasterAccount
     Properties:
-      Alias: '{{organization-name}}-management'
-      RootEmail: aws+management@{{email-domain}}
+      Alias: 'Bowo'
+      RootEmail: ayodejisadiku@gmail.com
       AccountName: Management Account
-      AccountId: '{{management-account-id}}'
+      AccountId: '847408437196'
       Tags:
         budget-alarm-threshold: 200
-        budget-alarm-threshold-email-recipient: me@{{email-domain}}
+        budget-alarm-threshold-email-recipient: ayodejisadiku@gmail.com
 
   OrganizationRoot:
     Type: OC::ORG::OrganizationRoot
@@ -25,59 +25,14 @@ Organization:
   ProdOu:
     Type: OC::ORG::OrganizationalUnit
     Properties:
-      OrganizationalUnitName: prod
+      OrganizationalUnitName: Production
       Accounts: []
 
-  # Organizational Unit used for the Software Development Life Cycle of each team
+  # Organizational Unit used for the Development team
   SdlcOu:
     Type: OC::ORG::OrganizationalUnit
     Properties:
-      OrganizationalUnitName: sdlc
+      OrganizationalUnitName: Test
       Accounts: []
 
-  # Organizational Unit used for shared infrastructure services
-  SharedOu:
-    Type: OC::ORG::OrganizationalUnit
-    Properties:
-      OrganizationalUnitName: shared
-      Accounts:
-        - !Ref OrgBuildAccount
-        - !Ref SecurityAccount
-        - !Ref LogArchiveAccount
-
-  # Organizational Unit that contains accounts to be deleted from organization
-  SuspendedOu:
-    Type: OC::ORG::OrganizationalUnit
-    Properties:
-      OrganizationalUnitName: suspended
-      Accounts: []
-
-  SecurityAccount:
-    Type: OC::ORG::Account
-    Properties:
-      Alias: '{{organization-name}}-security'
-      AccountName: Security Account
-      RootEmail: aws+security@{{email-domain}}
-      Tags:
-        budget-alarm-threshold: 200
-        budget-alarm-threshold-email-recipient: security@{{email-domain}}
-
-  LogArchiveAccount:
-    Type: OC::ORG::Account
-    Properties:
-      Alias: '{{organization-name}}-log-archive'
-      AccountName: Log Archive Account
-      RootEmail: aws+log-archive@{{email-domain}}
-      Tags:
-        budget-alarm-threshold: 200
-        budget-alarm-threshold-email-recipient: log-archive@{{email-domain}}
-
-  OrgBuildAccount:
-    Type: OC::ORG::Account
-    Properties:
-      Alias: '{{organization-name}}-org-build'
-      AccountName: Organization Build Account
-      RootEmail: aws+org-build@{{email-domain}}
-      Tags:
-        budget-alarm-threshold: 200
-        budget-alarm-threshold-email-recipient: me@{{email-domain}}
+  
